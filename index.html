@@ -32,7 +32,7 @@
                 
                 <div class="bg-secondary-subtle p-3 rounded-3">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nome" placeholder="Ex: Mauricio" required>
+                        <input type="text" class="form-control validate-me" id="nome" placeholder="Ex: Mauricio" required>
                         <label for="nome">Nome:</label>
                         <div class="valid-feedback">
                             Nome válido :D
@@ -44,7 +44,7 @@
 
 
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="sobrenome" placeholder="Ex:De Souza" required>
+                        <input type="text" class="form-control validate-me" id="sobrenome" placeholder="Ex:De Souza" required>
                         <label for="sobrenome">Sobrenome:</label>
                         <div class="valid-feedback">
                             Sobrenome válido :D
@@ -56,7 +56,7 @@
 
 
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nomeUsuario" placeholder="Ex: DonoDaLua98" required>
+                        <input type="text" class="form-control validate-me" id="nomeUsuario" placeholder="Ex: DonoDaLua98" required>
                         <label for="nomeUsuario">Nome de usuário:</label>
                         <div class="valid-feedback">
                             Usuário válido :D
@@ -73,20 +73,20 @@
                         </div>
                         <div class="col-auto">
                             <div class="col-sm-auto form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="genero" id="genero_masc" value="Masculino" required>
+                                <input class="form-check-input validate-me" type="radio" name="genero" id="genero_masc" value="Masculino" required>
                                 <label class="form-check-label h6" for="genero_masc">Masculino</label>
                             </div>
                             <div class=" col-sm-auto form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="genero_fem" name="genero" value="Feminino" required>
+                                <input class="form-check-input validate-me" type="radio" id="genero_fem" name="genero" value="Feminino" required>
                                 <label class="form-check-label" for="genero_fem">Feminino</label>
                             </div>
                             <div class="col-sm-auto form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="genero_outro" name="genero" value="Masculino" required>
+                                <input class="form-check-input validate-me" type="radio" id="genero_outro" name="genero" value="Masculino" required>
                                 <label class="form-check-label" for="genero_outro">Outro</label>
                                 
                             </div>
                             <div class="col-sm-auto form-check form-check-inline">
-                                <input class="form-check-input d-none" type="radio" name="genero" id="" value="Masculino" required>
+                                <input class="form-check-input d-none" type="radio" name="genero" id="" value="" required>
 
                                 <div class="col-sm-auto valid-feedback">
                                     Belo gênero :D
@@ -101,7 +101,7 @@
                     
 
                 <div class="form-floating mb-3">
-                    <input type="date" class="form-control" id="data" placeholder="Ex: 12/12/1212" required>
+                    <input type="date" class="form-control validate-me" id="data" placeholder="Ex: 12/12/1212" required>
                     <label for="data">Data de nascimento</label>
                     <div class="col-sm-auto valid-feedback">
                         Data valida :D
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="cpf" placeholder="Ex: 12345678910" minlength="11" maxlength="11" required>
+                    <input type="text" class="form-control" id="cpf" placeholder="Ex: 12345678910" minlength="14" maxlength="14" required>
                     <label for="cpf">CPF</label>
                     <div class="col-sm-auto valid-feedback">
                         CPF valido :D
@@ -122,7 +122,7 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-8 form-floating mb-3">
-                        <input type="text" class="form-control" id="cep" placeholder="Ex: 96015560" minlength="8" maxlength="8" required>
+                        <input type="text" class="form-control validate-me" id="cep" placeholder="Ex: 96015560" minlength="8" maxlength="8" required>
                         <label for="cep">CEP</label>
                         <div class="col-sm-auto valid-feedback">
                             CEP válido :D
@@ -131,7 +131,7 @@
                             CEP inválido >:(
                         </div>
                     </div>
-                    <select class="col form-select pb-0"  required>
+                    <select id="estado" class="col form-select pb-0 validate-me"  required>
                         <option value="" disabled selected>UF</option>
                         <option value="AC"disabled>AC</option>
                         <option value="AL"disabled>AL</option>
@@ -165,19 +165,19 @@
                 
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade" disabled required>
+                    <input type="text" class="form-control validate-me" id="cidade" placeholder="Digite sua cidade" disabled required>
                     <label for="cidade">Cidade</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="bairro" placeholder="Ex: Fragata" disabled required>
+                    <input type="text" class="form-control validate-me" id="bairro" placeholder="Ex: Fragata" disabled required>
                     <label for="bairro">Bairro</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="rua" placeholder="Ex: Praça 20 de Setembro" disabled required>
+                    <input type="text" class="form-control validate-me" id="rua" placeholder="Ex: Praça 20 de Setembro" disabled required>
                     <label for="rua">Rua</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="numero" placeholder="Ex: 231" required>
+                    <input type="text" class="form-control validate-me" id="numero" placeholder="Ex: 231" required>
                     <label for="numero">Numero</label>
                     <div class="valid-feedback">
                         Numero válido :D
@@ -189,13 +189,13 @@
                 
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="complemento" placeholder="Ex: Apartamento 502">
+                    <input type="text" class="form-control validate-me" id="complemento" placeholder="Ex: Apartamento 502">
                     <label for="complemento">Complemento</label>
                 </div>
 
 
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="email" placeholder="Ex: nome@email.com" required>
+                    <input type="email" class="form-control validate-me" id="email" placeholder="Ex: nome@email.com" required>
                     <label for="email">E-mail</label>
                     <div class="valid-feedback">
                         E-mail válido :D
@@ -207,20 +207,20 @@
 
 
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="confirmacao_email" placeholder="Ex: nome@email.com" required>
+                    <input type="email" class="form-control validate-me" id="confirmacao_email" placeholder="Ex: nome@email.com" required>
                     <label for="confirmacao_email">Confirme o e-mail</label>
               
                     <div class="valid-feedback">
-                        E-mail válido :D
+                        E-mails iguais :D
                     </div>
                     <div class="invalid-feedback">
-                        E-mail inválido >:(
+                        E-mails não iguais >:(
                     </div>
                 </div>
 
 
                 <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="senha" placeholder="Digite uma senha" required>
+                    <input type="password" class="form-control validate-me" id="senha" placeholder="Digite uma senha" required>
                     <label for="senha">Senha</label>
              
                     <div class="valid-feedback">
@@ -233,13 +233,13 @@
 
 
                 <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="confirmacao_senha" placeholder="Confirme a senha" required>
+                    <input type="password" class="form-control validate-me" id="confirmacao_senha" placeholder="Confirme a senha" required>
                     <label for="confirmacao_senha">Confirme a senha</label>
                     <div class="valid-feedback">
-                        Senha válida :D
+                        Senhas iguais :D
                     </div>
                     <div class="invalid-feedback">
-                        Senha inválida >:(
+                        Senhas não iguais >:(
                     </div>
                 </div>
 
